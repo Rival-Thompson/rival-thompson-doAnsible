@@ -35,8 +35,8 @@
   - name: creating html directory
     file: path=/usr/share/nginx/html/ state=directory
 
-  - name: sleep 30sec
-    shell: /bin/sleep 30
+  - name: sleep 10sec
+    shell: /bin/sleep 10
 
   - name: deploy website content
     template: src=/vagrant/configTemp/index.html.j2 dest=/usr/share/nginx/html/index.html
